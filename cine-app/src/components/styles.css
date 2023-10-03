@@ -18,7 +18,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	-ms-grid-columns: repeat(4, 1fr);
-	-ms-grid: grid;
+	/* -ms-grid: grid; */
 	gap: 40px;
 }
 
