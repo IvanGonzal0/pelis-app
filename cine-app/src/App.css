@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+
+.contenedor {
+	width: 100%;
+	max-width: 2540px;
+  margin: 20px auto 100px auto;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	-ms-grid-columns: repeat(5, 1fr);
+
+}
+
+.pelicula {
+  max-height: 700px;
+  max-width: 95%;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px 10px;
+}
+
+.pelicula:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #370397,
+    #062796,
+    #3c0497,
+    #16024d,
+    #19127c,
+    #002bff,
+    #17012e,
+    #570353,
+    #0602f5
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.pelicula img {
+  flex: 75%;
+  max-height: 100%;
+  width: auto;
+}
+
+.pelicula .titulo {
+  flex: 15%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pelicula button {
+  flex: 10%;
+  width: 50%;
+  align-self: center;
+  margin:5px;
+  cursor: pointer;
+  border: none;
+  background: #241744;
+  color: #fff;
+  border-radius: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  transition: .3s ease all;
+}
+
+.pelicula:hover button {
+  background: #137c32;
+}
+
+.header {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 2000px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+.header button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.header button:hover {
+	background: #137c32;
+}
+
+
+/* CSS */
+.btn-info {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none !important;
+  color: rgb(255, 255, 255);
+  outline: none; /* Evita que aparezca un borde al hacer clic */
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-info:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #00ffff,
+    #7affff,
+    #ffffff,
+    #ffffff
+  );
+  position: absolute;
+  outline: none; /* Evita que aparezca un borde al hacer clic */
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.btn-info:after {
+  z-index: -1;
+  content: "";
+  outline: none; /* Evita que aparezca un borde al hacer clic */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
