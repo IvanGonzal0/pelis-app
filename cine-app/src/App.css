@@ -1,23 +1,22 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	background: #e0e0e0;
-	color: #1d1d1d;
+  font-family: "Montserrat", sans-serif;
+  background: #e0e0e0;
+  color: #1d1d1d;
 }
 
 .contenedor {
-	width: 100%;
-	max-width: 2540px;
+  width: 100%;
+  max-width: 2540px;
   margin: 20px auto 100px auto;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	-ms-grid-columns: repeat(5, 1fr);
-
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: repeat(5, 1fr);
 }
 
 .pelicula {
@@ -96,15 +95,15 @@ body {
   flex: 10%;
   width: 50%;
   align-self: center;
-  margin:5px;
+  margin: 5px;
   cursor: pointer;
   border: none;
   background: #241744;
   color: #fff;
   border-radius: 100px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
 
 .pelicula:hover button {
@@ -112,36 +111,35 @@ body {
 }
 
 .header {
-	position: fixed;
-	bottom: 0;
-	background: #100a1f;
-	width: 2000px;
-	display: flex;
-	justify-content: center;
-	padding: 10px;
+  position: fixed;
+  bottom: 0;
+  background: #100a1f;
+  width: 2000px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 .header button {
-	cursor: pointer;
-	border: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	height: 50px;
-	width: 200px;
-	background: #241744;
-	color: #fff;
-	border-radius: 100px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	transition: .3s ease all;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  background: #241744;
+  color: #fff;
+  border-radius: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  transition: 0.3s ease all;
 }
 
 .header button:hover {
-	background: #137c32;
+  background: #137c32;
 }
-
 
 /* CSS */
 .btn-info {
@@ -169,8 +167,8 @@ body {
     #ffffff,
     #ffffff,
     #ffffff,
-    #00ffff,
-    #7affff,
+    #002fff,
+    #6130d4,
     #ffffff,
     #ffffff
   );
